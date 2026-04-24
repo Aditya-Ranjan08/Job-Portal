@@ -21,8 +21,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     colorPrimary: "#8b5cf6", 
   },
 }}
-      publishableKey={PUBLISHABLE_KEY}
+     publishableKey={PUBLISHABLE_KEY}
       afterSignOutUrl="/"
+     
+      signInFallbackRedirectUrl="/onboarding"
+      signUpFallbackRedirectUrl="/onboarding"
     >
       <App />
     </ClerkProvider>
